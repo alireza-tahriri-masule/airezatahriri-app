@@ -1,0 +1,111 @@
+/* General styles for the entire page */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e1e1e;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Menlo', 'Courier New', Courier, monospace;
+    color: #ffffff;
+}
+
+/* Terminal container styles */
+.terminal {
+    width: 90%;
+    max-width: 800px;
+    height: 80%;
+    background: #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Header section of the terminal */
+.terminal-header {
+    background: #2d2d2d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    color: #ccc;
+}
+
+/* Buttons on the terminal header */
+.terminal-header .buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.terminal-header .buttons span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+/* Specific colors for macOS-style buttons */
+.terminal-header .close {
+    background: #ff5f56;
+}
+
+.terminal-header .minimize {
+    background: #ffbd2e;
+}
+
+.terminal-header .maximize {
+    background: #28c840;
+}
+
+/* Terminal title text and icon */
+.terminal-title {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 8px;
+    color: #ccc;
+}
+
+.terminal-title svg {
+    color: #4bc3f5;
+}
+
+/* Main terminal text area */
+.typewriter-container {
+    flex: 1;
+    padding: 15px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #00ff00;
+    overflow-y: auto;
+    white-space: pre-wrap;
+}
+
+/* Terminal info displayed in the header */
+.terminal-info {
+    font-size: 14px;
+    font-family: 'Menlo', 'Courier New', Courier, monospace;
+    color: #cccccc;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+}
+
+/* Blinking cursor animation */
+.cursor {
+    display: inline-block;
+    background: #00ff00;
+    width: 8px;
+    height: 16px;
+    animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+    50% {
+        background: transparent;
+    }
+}

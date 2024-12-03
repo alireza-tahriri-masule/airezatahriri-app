@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata for the HTML document -->
+    <meta charset="UTF-8"> <!-- Sets character encoding to UTF-8 for proper text rendering -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive design on mobile devices -->
+    <title>Mac Terminal</title> <!-- Page title displayed in the browser tab -->
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="./css/app.css"> <!-- Stylesheet for terminal UI design -->
+</head>
+
+<body>
+    <!-- Main terminal container -->
+    <div class="terminal">
+        <!-- Header section of the terminal -->
+        <div class="terminal-header">
+            <!-- MacOS-style header buttons -->
+            <div class="buttons">
+                <span class="close"></span> <!-- Close button styled in CSS -->
+                <span class="minimize"></span> <!-- Minimize button styled in CSS -->
+                <span class="maximize"></span> <!-- Maximize button styled in CSS -->
+            </div>
+            <!-- Title bar with icon and dynamic terminal info -->
+            <div class="terminal-title">
+                <!-- SVG icon representing a folder or terminal -->
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0"
+                    y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" width="15" height="15" xml:space="preserve">
+                    <g>
+                        <path
+                            d="M0 191.808V384c.071 58.881 47.786 106.596 106.667 106.667h298.667C464.214 490.596 511.93 442.881 512 384V189.44L0 191.808zM405.333 64H266.069a21.746 21.746 0 0 1-9.536-2.133l-67.328-33.792a64.291 64.291 0 0 0-28.608-6.741h-53.931C47.786 21.404.071 69.119 0 128v21.141l509.077-2.368C497.961 98.408 454.959 64.099 405.333 64z"
+                            fill="#4bc3f5" opacity="1" data-original="#000000"></path>
+                    </g>
+                </svg>
+                <!-- Dynamic text area for displaying terminal information -->
+                <span class="terminal-info"></span>
+            </div>
+        </div>
+        <!-- Main area for displaying typed commands and output -->
+        <pre class="typewriter-container" id="typewriter"></pre>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="./js/app.js"></script> <!-- Script to handle terminal functionality -->
+</body>
+
+</html>

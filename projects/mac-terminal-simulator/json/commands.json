@@ -1,0 +1,164 @@
+[
+  {
+    "command": "ls",
+    "result": "file1.txt  file2.log  directory1  directory2  report.pdf  image1.png  data.csv  archive.tar.gz  backup.bak  config.json\n"
+  },
+  {
+    "command": "cat file1.txt",
+    "result": "This is the content of file1.txt.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque facilisis, lorem ac scelerisque interdum, mauris sapien hendrerit libero, id faucibus nulla nisi id libero.\n\nDonec convallis mi magna, ac vestibulum magna tincidunt ac. Proin vel sapien sed tortor maximus fermentum non at leo.\n"
+  },
+  {
+    "command": "ping -c 4 mars.station",
+    "result": "Pinging mars.station [192.168.10.1]:\n64 bytes from mars.station: icmp_seq=1 ttl=64 time=2.4 ms\n64 bytes from mars.station: icmp_seq=2 ttl=64 time=2.3 ms\n64 bytes from mars.station: icmp_seq=3 ttl=64 time=2.5 ms\n64 bytes from mars.station: icmp_seq=4 ttl=64 time=2.6 ms\n\n--- mars.station ping statistics ---\n4 packets transmitted, 4 received, 0% packet loss, time 3003ms\nrtt min/avg/max/mdev = 2.346/2.453/2.672/0.113 ms\n"
+  },
+  {
+    "command": "rm -rf asteroid_42/",
+    "result": "Asteroid 42 successfully removed from galaxy records.\n\nThe asteroid was part of the celestial debris catalog maintained by the Intergalactic Survey Authority. Its trajectory was closely monitored after its discovery in 1987.\nThe removal of this asteroid from the records signifies the end of its potential threat to the interplanetary transport routes.\n"
+  },
+  {
+    "command": "echo 'Hello, alien life!'",
+    "result": "Hello, alien life!\n\nThis message is being sent from the Space Exploration Fleet as part of an intergalactic communication protocol. We are reaching out to all civilizations that may be listening in the vastness of space.\nWe hope for peaceful interactions and mutual exchange of knowledge.\n"
+  },
+  {
+    "command": "df -h",
+    "result": "Filesystem      Size  Used Avail Use% Mounted on\n/dev/sda1       500G  300G  200G  60% /\n/dev/sdb1       1TB  400G  600G  40% /mnt/data\n/dev/sdc1       2TB  1.5TB  500G  75% /mnt/storage\n/dev/sdd1       100G  50G   50G  50% /mnt/backup\n"
+  },
+  {
+    "command": "top",
+    "result": "top - 15:25:33 up 3 days,  2:14,  2 users,  load average: 0.01, 0.05, 0.02\nTasks: 230 total,   1 running, 229 sleeping,   0 stopped,   0 zombie\n%Cpu(s):  3.0 us,  1.0 sy,  0.0 ni, 95.9 id,  0.1 wa,  0.0 hi,  0.0 si,  0.0 st\nMiB Mem :  8000.0 total,  3000.0 free,  4000.0 used,  1000.0 buff/cache\nMiB Swap:  2000.0 total,  1500.0 free,   500.0 used.  4000.0 avail Mem\n\n  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND\n  1001 root      20   0   1.2G  300M   80M S   5.0  3.5   5:34.21 Xorg\n  1002 user      20   0   600M  100M   20M S   3.0  1.2   3:21.10 gnome-shell\n  1003 user      20   0   400M   60M   15M S   2.5  0.8   1:21.23 code\n"
+  },
+  {
+    "command": "systemctl status apache2",
+    "result": "● apache2.service - The Apache HTTP Server\n   Loaded: loaded (/etc/systemd/system/apache2.service; enabled; vendor preset: enabled)\n   Active: active (running) since Fri 2024-11-27 15:05:45 UTC; 1h 30min ago\n Main PID: 12345 (apache2)\n    Tasks: 3 (limit: 4915)\n   Memory: 15.2M\n   CGroup: /system.slice/apache2.service\n           ├─12345 /usr/sbin/apache2 -k start\n           └─12346 /usr/sbin/apache2 -k start\n"
+  },
+  {
+    "command": "mkdir new_directory",
+    "result": "Directory 'new_directory' created.\n"
+  },
+  {
+    "command": "rmdir old_directory",
+    "result": "Directory 'old_directory' removed.\n"
+  },
+  {
+    "command": "cp file1.txt file2.txt",
+    "result": "file1.txt copied to file2.txt.\n"
+  },
+  {
+    "command": "mv file2.txt /path/to/destination/",
+    "result": "file2.txt moved to /path/to/destination/\n"
+  },
+  {
+    "command": "cat /etc/passwd",
+    "result": "root:x:0:0:root:/root:/bin/bash\nuser:x:1000:1000:User:/home/user:/bin/bash\n"
+  },
+  { "command": "touch newfile.txt", "result": "File 'newfile.txt' created.\n" },
+  {
+    "command": "echo 'Sample text' > newfile.txt",
+    "result": "Sample text written to 'newfile.txt'.\n"
+  },
+  { "command": "cat newfile.txt", "result": "Sample text\n" },
+  {
+    "command": "grep 'root' /etc/passwd",
+    "result": "root:x:0:0:root:/root:/bin/bash\n"
+  },
+  { "command": "find /home -name '*.txt'", "result": "/home/user/file1.txt\n" },
+  {
+    "command": "chmod +x script.sh",
+    "result": "Permissions for script.sh set to executable.\n"
+  },
+  {
+    "command": "chown user:user file1.txt",
+    "result": "Ownership of 'file1.txt' changed to user:user.\n"
+  },
+  {
+    "command": "ps aux",
+    "result": "USER       PID  %CPU %MEM     VSZ    RSS   TTY  STAT START   TIME COMMAND\nroot      1234  0.1  1.5  89012  2345 pts/0  Ss   14:32   0:02 /usr/bin/bash\n"
+  },
+  { "command": "kill 1234", "result": "Process 1234 terminated.\n" },
+  {
+    "command": "sudo apt update",
+    "result": "Hit:1 http://archive.ubuntu.com/ubuntu focal InRelease\n"
+  },
+  {
+    "command": "sudo apt upgrade",
+    "result": "Reading package lists... Done\nBuilding dependency tree       \n"
+  },
+  { "command": "sudo reboot", "result": "System is rebooting...\n" },
+  { "command": "hostname", "result": "hostname\n" },
+  { "command": "uname -r", "result": "5.4.0-42-generic\n" },
+  {
+    "command": "lsblk",
+    "result": "NAME   MAJ:MIN  RM   SIZE RO TYPE MOUNTPOINT\nsda      8:0    0  100G  0 disk \n"
+  },
+  {
+    "command": "free -h",
+    "result": "              total        used        free      shared  buff/cache   available\nMem:            8.0Gi       2.0Gi       3.5Gi       0.8Gi       2.5Gi       4.5Gi\n"
+  },
+  {
+    "command": "ip a",
+    "result": "inet 192.168.1.1/24 brd 192.168.1.255 scope global eth0\n"
+  },
+  {
+    "command": "netstat -tuln",
+    "result": "Proto Recv-Q Send-Q Local Address           Foreign Address         State\n"
+  },
+  {
+    "command": "df -i",
+    "result": "Filesystem       Inodes   IUsed   IFree IUse% Mounted on\n/dev/sda1         500000  100000  400000  20% /"
+  },
+  {
+    "command": "lscpu",
+    "result": "Architecture:        x86_64\nCPU op-mode(s):      32-bit, 64-bit\n"
+  },
+  {
+    "command": "lsmod",
+    "result": "Module                  Size  Used by\nnf_conntrack         131072  2\n"
+  },
+  { "command": "whoami", "result": "user\n" },
+  {
+    "command": "uptime",
+    "result": " 15:30:33 up 3 days,  2:15,  2 users,  load average: 0.01, 0.05, 0.02\n"
+  },
+  { "command": "hostnamectl", "result": "Static hostname: linux-pc\n" },
+  {
+    "command": "journalctl",
+    "result": "-- Logs begin at Tue 2024-11-24 15:32:10 UTC, end at Mon 2024-11-27 15:30:39 UTC. --\n"
+  },
+  { "command": "systemctl start nginx", "result": "nginx.service started.\n" },
+  { "command": "systemctl stop nginx", "result": "nginx.service stopped.\n" },
+  {
+    "command": "systemctl restart nginx",
+    "result": "nginx.service restarted.\n"
+  },
+  {
+    "command": "systemctl enable nginx",
+    "result": "nginx.service enabled to start on boot.\n"
+  },
+  {
+    "command": "systemctl disable nginx",
+    "result": "nginx.service disabled from boot.\n"
+  },
+  { "command": "adduser newuser", "result": "Adding user 'newuser' ...\n" },
+  {
+    "command": "passwd newuser",
+    "result": "Changing password for user newuser.\n"
+  },
+  { "command": "groupadd newgroup", "result": "Group 'newgroup' added.\n" },
+  {
+    "command": "usermod -aG newgroup newuser",
+    "result": "User 'newuser' added to 'newgroup'.\n"
+  },
+  { "command": "sudo su", "result": "root@linux-pc:~#\n" },
+  {
+    "command": "curl http://example.com",
+    "result": "HTTP/1.1 200 OK\nDate: Mon, 27 Nov 2024 15:30:00 GMT\n"
+  },
+  {
+    "command": "wget http://example.com/file.zip",
+    "result": "Saving to: ‘file.zip’\n"
+  },
+  {
+    "command": "tar -xzvf archive.tar.gz",
+    "result": "archive.tar.gz: extracting files...\n"
+  }
+]
